@@ -3,61 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoffeeBug's Den</title>
+  <title>Links</title>
   <style>
     body {
       background-color: #000;
       font-family: 'Courier New', monospace;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
       margin: 0;
-      overflow: hidden;
-    }
-    .container {
-      text-align: center;
-      padding: 20px;
-      border: 2px solid #BED529;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(190, 213, 41, 0.5);
-      transition: transform 0.3s ease;
-    }
-    .container:hover {
-      transform: scale(1.05);
     }
     a {
       color: #BED529;
       text-decoration: none;
       font-size: 1.5rem;
       margin: 15px 0;
-      display: block;
-      position: relative;
-      padding: 10px;
       transition: color 0.3s ease;
     }
     a:hover {
       color: #fff;
-      background: #BED529;
-      border-radius: 5px;
-    }
-    a::before {
-      content: '>';
-      position: absolute;
-      left: -20px;
-      color: #BED529;
-      opacity: 0.7;
-    }
-    .title {
-      color: #BED529;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px #BED529;
     }
     @media (max-width: 600px) {
-      .container {
-        width: 90%;
-      }
       a {
         font-size: 1.2rem;
       }
@@ -65,11 +33,8 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">CoffeeBug's Lair</h1>
-    <a href="https://www.instagram.com/benjicoffeebug" target="_blank">Instagram</a>
-    <a href="https://www.roblox.com/users/138597718/profile" target="_blank">Roblox</a>
-    <a href="https://www.discord.gg/s8N3C2wM" target="_blank">Discord Crew</a>
-  </div>
+  <a href="https://www.instagram.com/benjicoffeebug" target="_blank">Instagram</a>
+  <a href="https://www.roblox.com/users/138597718/profile" target="_blank">Roblox</a>
+  <a href="https://www.discord.gg/s8N3C2wM" target="_blank">Discord</a>
 </body>
 </html>
