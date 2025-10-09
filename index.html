@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beeeeeeenj</title>
-  <!-- Google Fonts Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #000;
-      font-family: 'Montserrat', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    a {
-      color: #BED529;
-      text-decoration: none;
-      font-size: 1.5rem;
-      margin: 15px 0;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #fff;
-    }
-    @media (max-width: 600px) {
-      a {
-        font-size: 1.2rem;
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Night Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/"
+        }
       }
-    }
-  </style>
+    </script>
+    <style>
+      /* Custom full-page scroll transition */
+      .scrolling-container {
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      
+      /* Vignette Effect */
+      .vignette::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0) 75%, rgba(0,0,0,1) 95%);
+        pointer-events: none;
+        z-index: 1;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
 </head>
-<body>
-  <a href="https://www.instagram.com/benjicoffeebug" target="_blank">Instagram</a>
-  <a href="https://www.roblox.com/users/138597718/profile" target="_blank">Roblox</a>
-</body>
+  <body class="bg-black text-white font-sans overflow-hidden">
+    <div id="root"></div>
+    
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
